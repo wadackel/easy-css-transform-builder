@@ -164,8 +164,8 @@ Released under the [MIT Licence](https://raw.githubusercontent.com/tsuyoshiwada/
 
 ## Contribution
 
-Thank you for your interest in react-stack-grid.js.  
-Bugs, feature requests and comments are more than welcome in the [issues](https://github.com/tsuyoshiwada/react-stack-grid/issues).
+Thank you for your interest in easy-css-transform-builder.js.
+Bugs, feature requests and comments are more than welcome in the [issues](https://github.com/tsuyoshiwada/easy-css-transform-builder/issues).
 
 **Before you open a PR:**
 
