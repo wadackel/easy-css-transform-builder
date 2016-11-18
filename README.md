@@ -3,7 +3,8 @@ easy-css-transform-builder
 
 [![Build Status](http://img.shields.io/travis/tsuyoshiwada/easy-css-transform-builder.svg?style=flat-square)](https://travis-ci.org/tsuyoshiwada/easy-css-transform-builder)
 [![npm version](https://img.shields.io/npm/v/easy-css-transform-builder.svg?style=flat-square)](http://badge.fury.io/js/easy-css-transform-builder)
-[![David](https://img.shields.io/david/dev/tsuyoshiwada/easy-css-transform-builder.svg?style=flat-square)](https://david-dm.org/tsuyoshiwada/easy-css-transform-builder/#info=devDependencies&view=table)
+[![David](https://img.shields.io/david/tsuyoshiwada/easy-css-transform-builder.svg?style=flat-square)](https://david-dm.org/tsuyoshiwada/easy-css-transform-builder)
+[![David dev](https://img.shields.io/david/dev/tsuyoshiwada/easy-css-transform-builder.svg?style=flat-square)](https://david-dm.org/tsuyoshiwada/easy-css-transform-builder/#info=devDependencies&view=table)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://raw.githubusercontent.com/tsuyoshiwada/easy-css-transform-builder/master/LICENSE)
 
 
