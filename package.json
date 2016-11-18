@@ -1,6 +1,6 @@
 {
   "name": "easy-css-transform-builder",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Easily build CSS transform values with JavaScript.",
   "main": "lib/index.js",
   "scripts": {
