@@ -6,11 +6,6 @@ easy-css-transform-builder
 [![David](https://img.shields.io/david/dev/tsuyoshiwada/easy-css-transform-builder.svg?style=flat-square)](https://david-dm.org/tsuyoshiwada/easy-css-transform-builder/#info=devDependencies&view=table)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://raw.githubusercontent.com/tsuyoshiwada/easy-css-transform-builder/master/LICENSE)
 
----
-
-:boom: **WIP PROJECT** :boom:
-
----
 
 Easily build CSS transform values with JavaScript.
 
