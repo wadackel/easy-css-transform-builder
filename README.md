@@ -31,13 +31,13 @@ const builder = createCSSTransformBuilder({
 
 const transform = builder({
   translateX: 30,
-  scale3d: [1.2, 4, 1.8],
-  rotate: 45,
+  scale: 2.8,
+  rotate3d: [1, 0, 0, 60],
   skewY: "40rad"
 });
 
 console.log(transform);
-// translateX(30px) scale3d(1.2, 4, 1.8) rotate(45deg) skewY(40rad)
+// translateX(30px) scale(2.8) rotate3d(1, 0, 0, 60deg) skewY(40rad)
 ```
 
 
@@ -60,7 +60,7 @@ You can set the following properties.
 * `scaleY`: `number` | `string`
 * `scaleZ`: `number` | `string`
 * `rotate`: `number` | `string`
-* `rotate3d`: [`number * 3`] | `string`
+* `rotate3d`: [`number * 4`] | `string`
 * `rotateX`: `number` | `string`
 * `rotateY`: `number` | `string`
 * `rotateZ`: `number` | `string`
