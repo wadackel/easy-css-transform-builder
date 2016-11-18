@@ -4,7 +4,7 @@
   "description": "Easily build CSS transform values with JavaScript.",
   "main": "lib/index.js",
   "scripts": {
-    "build": "NODE_ENV=production babel src --out-dir lib",
+    "build": "babel src --out-dir lib",
     "watch": "npm run test -- -w",
     "test": "NODE_ENV=development mocha test/**/*.spec.js --compilers js:babel-register --recursive",
     "lint": "eslint src/**/*.js test/**/*.js .eslintrc.js --no-ignore",
@@ -44,5 +44,8 @@
     "jsdom": "^9.8.3",
     "mocha": "^3.1.2",
     "power-assert": "^1.4.2"
+  },
+  "dependencies": {
+    "invariant": "^2.2.2"
   }
 }

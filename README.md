@@ -65,10 +65,10 @@ You can set the following properties.
 * `scaleY`: `number` | `string`
 * `scaleZ`: `number` | `string`
 * `rotate`: `number` | `string`
+* `rotate3d`: [`number * 3`] | `string`
 * `rotateX`: `number` | `string`
 * `rotateY`: `number` | `string`
 * `rotateZ`: `number` | `string`
-* `rotate3d`: [`number * 3`] | `string`
 * `skewX`: `number` | `string`
 * `skewY`: `number` | `string`
 * `perspective`: `number` | `string`
