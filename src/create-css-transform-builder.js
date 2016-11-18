@@ -11,10 +11,10 @@ const isArray = value => Array.isArray(value);
 
 const hasProp = (o, p) => o.hasOwnProperty(p);
 
-const isValidProp = val =>
-  typeof val === "number" ||
-  typeof val === "string" ||
-  isArray(val);
+const isValidProp = value =>
+  typeof value === "number" ||
+  typeof value === "string" ||
+  isArray(value);
 
 const createUnit = (units, unit) => unit === UnitTypes.NONE ? "" : units[unit];
 
