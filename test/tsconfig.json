@@ -1,0 +1,16 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../tmp",
+    "rootDirs": [
+      "."
+    ],
+    "inlineSourceMap": true
+  },
+  "include": [
+    "./**/*.spec.ts"
+  ],
+  "exclude": [
+    "../node_modules"
+  ]
+}
