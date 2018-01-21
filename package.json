@@ -43,8 +43,6 @@
   ],
   "devDependencies": {
     "ava": "^0.24.0",
-    "jsdom": "^9.8.3",
-    "mocha": "^3.1.2",
     "npm-run-all": "^4.1.2",
     "power-assert": "^1.4.2",
     "tslint": "^5.9.1",
