@@ -1,14 +1,13 @@
-easy-css-transform-builder
-==========================
+# easy-css-transform-builder
 
 [![Build Status](http://img.shields.io/travis/tsuyoshiwada/easy-css-transform-builder.svg?style=flat-square)](https://travis-ci.org/tsuyoshiwada/easy-css-transform-builder)
 [![npm version](https://img.shields.io/npm/v/easy-css-transform-builder.svg?style=flat-square)](http://badge.fury.io/js/easy-css-transform-builder)
 [![David](https://img.shields.io/david/tsuyoshiwada/easy-css-transform-builder.svg?style=flat-square)](https://david-dm.org/tsuyoshiwada/easy-css-transform-builder)
-[![David dev](https://img.shields.io/david/dev/tsuyoshiwada/easy-css-transform-builder.svg?style=flat-square)](https://david-dm.org/tsuyoshiwada/easy-css-transform-builder/#info=devDependencies&view=table)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://raw.githubusercontent.com/tsuyoshiwada/easy-css-transform-builder/master/LICENSE)
 
+> Easily build CSS transform values with JavaScript.
 
-Easily build CSS transform values with JavaScript.
+
 
 
 ## Install
@@ -18,28 +17,31 @@ $ npm install easy-css-transform-builder
 ```
 
 
+
+
 ## Usage
 
 You can build transform values with a simple API.
 
 ```javascript
-import { createCSSTransformBuilder } from "easy-css-transform-builder";
+import { createCSSTransformBuilder } from 'easy-css-transform-builder';
 
 const builder = createCSSTransformBuilder({
-  length: "px",
-  angle: "deg"
+  length: 'px',
+  angle: 'deg',
 });
 
 const transform = builder({
   translateX: 30,
   scale: 2.8,
   rotate3d: [1, 0, 0, 60],
-  skewY: "40rad"
+  skewY: '40rad',
 });
 
 console.log(transform);
 // translateX(30px) scale(2.8) rotate3d(1, 0, 0, 60deg) skewY(40rad)
 ```
+
 
 
 
@@ -77,28 +79,25 @@ You can set the following properties.
 ```javascript
 import {
   createCSSTransformBuilder,
-  properties
-} from "easy-css-transform-builder";
+  properties,
+} from 'easy-css-transform-builder';
 ```
 
 
-### `createCSSTransformBuilder(units = { length: "px", angle: "deg" })`
+### `createCSSTransformBuilder(units: object)`
 
 Create a Builder.
-
-**units: {Object}**  
-**return: {}**
 
 **Example:**
 
 ```javascript
-const builder = createCSSTransformBuilder({ length: "em", angle: "rad" })
+const builder = createCSSTransformBuilder({ length: 'em', angle: 'rad' });
 
 builder({ translateY: 50 }); // translateY(50px)
 ```
 
 
-### `properties`
+### `properties: string[]`
 
 An array of supported property names.
 
@@ -119,17 +118,16 @@ console.log(properties);
 Because it's a simple API, it can be used in various environments.
 
 ```javascript
-import React, { Component } from "react";
-import { createCSSTransformBuilder } from "easy-css-transform-builder";
+import React, { Component } from 'react';
+import { createCSSTransformBuilder } from 'easy-css-transform-builder';
 
 const builder = createCSSTransformBuilder();
-
 
 class MyComponent extends Component {
   render() {
     return (
       <div style={{
-        background: "#efefef",
+        background: '#efefef',
         transform: builder({
           translateX: 100,
           translateY: -50,
@@ -145,27 +143,43 @@ class MyComponent extends Component {
 
 
 
-## License
 
-Released under the [MIT Licence](https://raw.githubusercontent.com/tsuyoshiwada/easy-css-transform-builder/master/LICENSE)
+## CHANGELOG
 
-
-
-
-## Author
-
-[tsuyoshiwada](https://github.com/tsuyoshiwada)
+See the [CHANGELOG.md](./CHANGELOG.md)
 
 
 
-## Contribution
 
-Thank you for your interest in easy-css-transform-builder.js.
+## Contibute
+
+1. Fork it!
+1. Create your feature branch: `git checkout -b my-new-feature`
+1. Commit your changes: `git commit -am 'Add some feature'`
+1. Push to the branch: `git push origin my-new-feature`
+1. Submit a pull request :muscle:
+
 Bugs, feature requests and comments are more than welcome in the [issues](https://github.com/tsuyoshiwada/easy-css-transform-builder/issues).
 
-**Before you open a PR:**
 
-Be careful to follow the code style of the project. Run `npm test` after your changes and ensure you do not introduce any new errors or warnings.
-All new features and changes need documentation.
+### Development
 
-Thanks!
+We will develop using the following npm scripts.
+
+
+#### `npm run build`
+
+Compile TypeScript and create type definitions.
+
+
+#### `npm run test`
+
+Run unit testing with Ava, And linting with TSLint.
+
+
+
+
+## License
+
+[MIT © tsuyoshiwada](./LICENSE)
+
